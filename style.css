@@ -1,0 +1,231 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/img/pattern03.jpg);
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(assets/img/sign-up-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.header .header-body {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    margin: -150px 0px 0px 120px;
+}
+
+.header .header-body .joinnow {
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    height: 50px;
+    min-width: 189px;
+    padding: 0;
+    color: #fff;
+    background: red;
+}
+
+.header-nav {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.header-widget {
+    text-align: center;
+    width: 100%;
+}
+
+.header-widget .widget-info {
+    text-align: center;
+    width: 600px;
+}
+
+.header-widget .widget-info h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.4375rem;
+}
+
+.header-widget .widget-info span {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+    text-transform: uppercase;
+    max-width: 75%;
+}
+
+.header-widget .logo {
+    width: 120px;
+}
+
+.header .header-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+}
+
+.header .header-footer .steps {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.steps .step {
+    display: flex;
+    padding: 10px;
+    float: left;
+    align-items: baseline;
+}
+
+.step .num {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 10px 0px 0;
+}
+
+.step span {
+    font-weight: 900;
+}
+
+.main {
+    max-width: 960px;
+    background: white;
+    padding: 72px;
+    color: black;
+    margin: 10px auto;
+}
+
+.main p {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.main .article-wrapper {}
+
+.main .article-wrapper .grids {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main .article-wrapper .grids .grid {
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.grid .grid-icon {
+    padding: 0px 30px 0 0px;
+}
+
+.grid .grid-icon img {
+    width: 70px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    font-weight: 400;
+    font-size: .75rem;
+    text-align: center;
+    padding: 10px;
+    height: 30vh;
+    justify-content: center;
+}
+
+footer .footer-widget {
+    padding: 10px;
+}
+
+footer .footer-widget img {
+    padding: 10px;
+}
+
+footer .copyrights {}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        height: auto;
+    }
+    .header-body {
+        margin: 0 !important;
+    }
+    .header-widget {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .header-widget .widget-info {
+        text-align: center;
+        width: auto;
+    }
+    .header .header-footer {
+        position: relative;
+    }
+    .header .header-footer .steps {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .article-wrapper .grids .grid {
+        flex-direction: column;
+    }
+    .steps .step {
+        display: flex;
+        padding: 10px;
+        float: left;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer {
+        height: auto;
+    }
+    footer img {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1102px) {
+    .main {
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    footer img {
+        width: 100%;
+    }
+}
